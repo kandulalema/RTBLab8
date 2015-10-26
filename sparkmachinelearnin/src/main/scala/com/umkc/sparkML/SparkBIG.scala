@@ -61,6 +61,8 @@ object SparkBIG {
 
 
     p.collect().foreach(println)
+    
+    iOSConnector.sendCommandToRobot(p.collect().toString)
 
 
 
